@@ -1,7 +1,7 @@
 import http.server,requests,sys,colorama
 from urllib.request import Request, urlopen
 from colorama import Fore,Back
-
+colorama.init()
 
 def LocalServer(path):
     class Handler(http.server.SimpleHTTPRequestHandler):
