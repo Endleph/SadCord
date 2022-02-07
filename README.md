@@ -1,5 +1,5 @@
 # SadCord
-Phishing Tool for windows, it create local server 
+Phishing Tool for Linux,Windows... it create local server 
 and it sends the data entered to a webhook
 # How to use 
 `git clone https://github.com/Zeleph-Dev/SadCord.git`
