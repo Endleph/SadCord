@@ -5,13 +5,6 @@ from colorama import Fore,Back
 os.system("cls")
 os.system("title Sadcord - ZELEPH")
 
-if os.path.exists("ngrok.exe"):
-	pass
-else:
-	print("Download Ngrok...")
-	os.system('start https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip')
-	print("Add 'ngord.exe' in this path ")
-	input("")
 
 def LocalServer(path):
     class Handler(http.server.SimpleHTTPRequestHandler):
@@ -19,7 +12,6 @@ def LocalServer(path):
             super().__init__(*args, directory=path, **kwargs)
     os.system("cls")
     print(menu)
-    os.system("start ngrok.exe http 80")
     PORT = 80
     server_address = ("0.0.0.0", PORT)
     server = http.server.HTTPServer
