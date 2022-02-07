@@ -1,4 +1,4 @@
-import http.server,os,requests,sys,colorama
+import http.server,requests,sys,colorama
 from urllib.request import Request, urlopen
 from colorama import Fore,Back
 
@@ -7,7 +7,6 @@ def LocalServer(path):
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, directory=path, **kwargs)
-    os.system("cls")
     print(menu)
     PORT = 80
     server_address = ("0.0.0.0", PORT)
