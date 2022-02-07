@@ -2,9 +2,6 @@ import http.server,os,requests,sys,colorama
 from urllib.request import Request, urlopen
 from colorama import Fore,Back
 
-os.system("cls")
-os.system("title Sadcord - ZELEPH")
-
 
 def LocalServer(path):
     class Handler(http.server.SimpleHTTPRequestHandler):
