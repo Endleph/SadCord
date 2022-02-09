@@ -30,7 +30,7 @@ menu = f"""
                             {Back.YELLOW}Disclamer:Developer assume no liability and is not{Back.RESET}
                             {Back.YELLOW}responsible for any misuse or damage caused by this program{Back.RESET}
 			    ═════════════════════════════════════════════════════════
-                            Discord : {Fore.RED}ZELEPH#1225{Fore.RESET}                                                           
+                            Discord : {Fore.RED}ENDLEPH#0001{Fore.RESET}                                                           
                             Serveur {Fore.RED}https://discord.gg/mkgvTuBSZM{Fore.RESET}                   
 			    ═════════════════════════════════════════════════════════
                             -COMMANDS-
