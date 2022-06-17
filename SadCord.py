@@ -13,7 +13,7 @@ def LocalServer(path):
     server = http.server.HTTPServer
     #handler = http.server.CGIHTTPRequestHandler
     #handler.cgi_directories = ["/web/fb"]
-    print(f"[{Fore.GREEN}+{Fore.RESET}] URL : https://localhost/")
+    print(f"[{Fore.GREEN}+{Fore.RESET}] URL : http://localhost/")
     print(f"[{Fore.GREEN}+{Fore.RESET}] PORT : ", PORT)
  
     httpd = server(server_address, Handler)
